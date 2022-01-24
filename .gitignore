@@ -1,4 +1,5 @@
 # Project exclude paths
-/node_modules/
 .idea
-cypress/videos
+cypress-tests/node_modules/
+cypress-tests/cypress/videos
+results
