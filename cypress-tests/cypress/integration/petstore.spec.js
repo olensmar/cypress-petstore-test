@@ -1,6 +1,7 @@
 describe('Petstore Testing', () => {
     it('Visits PetStore', () => {
-        cy.visit('/')
+        let host = Cypress.env('host') || 'http://localhost:8001'
+        cy.visit(host + '/')
         cy.get('.title').should('have.text', "Failed to load API definition.")
         cy.get('.download-url-input').type("{selectall}http://localhost:8001/api/swagger.json")
         cy.get('.download-url-button').click()
