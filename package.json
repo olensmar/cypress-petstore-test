@@ -1,4 +1,13 @@
 {
+  "name": "cypress-petstore-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress/integration/simple-test.js",
+  "scripts": {
+    "test": "cypress run cypress/integration/simple-test.js"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "cypress": "^9.3.1"
   }
