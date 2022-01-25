@@ -5,6 +5,6 @@ describe('Petstore Testing', () => {
         cy.get('.title').should('have.text', "Failed to load API definition.")
         cy.get('.download-url-input').type("{selectall}" + host + "/api/swagger.json")
         cy.get('.download-url-button').click()
-        cy.get('.title').should('contain.text', "Swagger Petstore")
+        cy.get('.title').should('contain.text', "Swagger Petstorse")
     })
 })

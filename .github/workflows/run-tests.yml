@@ -51,4 +51,4 @@ jobs:
       # Run TestKube script on a GKE cluster
       - name: Run Test
         run: |-
-          kubectl testkube scripts start petstore-inventory -p baseUrl=http://10.116.9.4:8001 
+          kubectl testkube tests start petstore-test -p host=http://10.116.9.4:8001 -p baseUrl=http://10.116.9.4:8001 
