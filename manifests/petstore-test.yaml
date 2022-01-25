@@ -1,0 +1,20 @@
+apiVersion: tests.testkube.io/v1
+kind: Test
+metadata:
+  name: petstore-test
+  namespace: testkube
+spec:
+  steps:
+    - execute:
+        name: petstore-inventory
+        namespace: testkube
+    - delay:
+        duration: 1000
+    - execute:
+        name: petstore-findpetbyid
+        namespace: testkube
+    - delay:
+        duration: 1000
+    - execute:
+        name: cypress-petstore
+        namespace: testkube

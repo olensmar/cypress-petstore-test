@@ -1,0 +1,12 @@
+apiVersion: tests.testkube.io/v1
+kind: Script
+metadata:
+  name: cypress-petstore
+  namespace: testkube
+spec:
+  repository:
+    branch: main
+    path: cypress-tests
+    type: git
+    uri: https://github.com/olensmar/cypress-petstore-test.git
+  type: cypress/project
